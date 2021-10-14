@@ -16,7 +16,7 @@ function App() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/SuperHeroes">SuperHeroes</Link>
-        <Link to="/RQSuperHeroesPage">RQSuperHeroesPage</Link>
+        <Link to="/RQSuperHeroes">RQSuperHeroesPage</Link>
       </nav>
     </div>
   );
