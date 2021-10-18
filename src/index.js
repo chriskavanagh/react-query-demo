@@ -3,12 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const client = new QueryClient({
+  defaultOptions: { queries: { suspense: false } },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <QueryClientProvider client={client}>
+      <Router>
+        <App />
+      </Router>
+    </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

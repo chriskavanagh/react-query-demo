@@ -3,6 +3,8 @@ import HomePage from "./components/Home.page";
 import SuperHeroesPage from "./components/SuperHeroes.page";
 import RQSuperHeroesPage from "./components/RQSuperHeroes.page";
 import "./App.css";
+import { ReactQueryDevtools } from "react-query/devtools";
+//import { useQuery } from "react-query";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Link to="/SuperHeroes">SuperHeroes</Link>
         <Link to="/RQSuperHeroes">RQSuperHeroesPage</Link>
       </nav>
+      <ReactQueryDevtools />
     </div>
   );
 }
