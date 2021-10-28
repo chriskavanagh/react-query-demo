@@ -45,7 +45,7 @@ export default function PaginatedColors() {
           onClick={() => setPageNumber((page) => page + 1)}
           disabled={pageNumber === 4}
         >
-          Prev Page
+          Next Page
         </button>
       </div>
     </div>
